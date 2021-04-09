@@ -1,0 +1,145 @@
+nav.main-header.navbar.navbar-expand.navbar-white.navbar-light {
+    background: #2089e1;
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+aside.main-sidebar.sidebar-dark-primary {
+    background: #fff;
+    box-shadow: none;
+    border-right: 1px solid #e2e2e2;
+}
+span.brand-text.font-weight-light {
+    font-weight: bolder !important;
+}
+[class*=sidebar-dark] .brand-link {
+    border-bottom: 1px solid #4b545c;
+    background-color: #2089e1;
+}
+.layout-fixed .wrapper .sidebar {
+    padding: 0px 5px;
+}
+[class*=sidebar-dark-] .sidebar a {
+    color: #2089e1;
+}
+[class*=sidebar-dark-] .sidebar a p {
+    color: #777;
+}
+.nav-pills .nav-link:not(.active):hover {
+    color: #007bff;
+}
+[class*=sidebar-dark-] .nav-sidebar>.nav-item>.nav-link.active {
+    color: #fff;
+    box-shadow: none;
+    border-radius: 50px;
+}
+[class*=sidebar-dark-] .nav-sidebar>.nav-item.menu-open>.nav-link, [class*=sidebar-dark-] .nav-sidebar>.nav-item:hover>.nav-link, [class*=sidebar-dark-] .nav-sidebar>.nav-item>.nav-link:focus{
+    background-color: #e2e2e2;
+    color: #666;
+    border-radius: 50px;
+}
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link p {
+    padding-left: 13px;
+}
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active p, .sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link:hover p {
+    font-weight: 700;
+}
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active i, .sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link:hover {
+    color: #2089e1;
+}
+[class*=sidebar-dark-] .user-panel a:hover {
+    color: #777;
+}
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: #e2e2e2;
+    color: #555;
+}
+.card-header .col-md-3 {
+    display: inline-block;
+}
+.confirm-delete-box {
+    position: absolute;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 400px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background:#f4f6f9;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.30);
+    padding: 30px;
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 500;
+    display: none;
+}
+.confirm-delete-box.show{
+    display: block;
+}
+.confirm-delete-box .action-btn a.delete {
+    color: #f00;
+}
+
+.confirm-delete-box .action-btn a.cancel {
+    margin-left: 30px;
+    color: #9d9d9d;
+}
+
+.confirm-delete-box .action-btn a.cancel:hover {
+    color: #333;
+}
+
+.confirm-delete-box .action-btn a {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.confirm-delete-box .action-btn {
+    text-align: right;
+    padding-top: 15px;
+}
+.search-bar .form-control, .sorting-bar .form-control{
+border-radius: 50px; 
+padding:    5px 15px;
+}
+.btn.btn-primary, .btn.btn-danger {
+    border-radius: 50px;
+    padding: 7px 30px;
+}
+
+li.breadcrumb-item i {
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+li.breadcrumb-item a.btn {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.table-bordered td, .table-bordered th, table.table.table-bordered {
+    border: none;
+}
+
+.table-bordered tr {
+    border-bottom: 1px solid #e2e2e2;
+}
+.table-bordered thead {
+    border-radius: 43px;
+    background: #e2e2e2;
+}
+.table-bordered thead th a {
+    color: #555;
+}
+.mt-20{
+    margin-top: 20px;
+}
+li.nav-item.dropdown.show .image {
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+}
+li.nav-item.dropdown.show .image img.img-circle {
+    height: 100px;
+}

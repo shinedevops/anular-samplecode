@@ -1,0 +1,146 @@
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1>Customers</h1>
+      </div>
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-right">
+          <li class="breadcrumb-item"><a href="javascript:void(0);" class="btn btn-primary"><i class="fas fa-plus"></i> Add Customer</a></li>
+        </ol>
+      </div>
+    </div>
+  </div><!-- /.container-fluid -->
+</section>
+<!-- Main content -->
+<section class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="flash-message">
+        <!-- <div class="alert alert-danger  alert-dismissible">
+          <a href="javascript:void(0);" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        </div>
+        <div class="alert alert-success  alert-dismissible">
+          <a href="javascript:void(0);" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        </div> -->
+      </div> <!-- end .flash-message -->
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <div class="col-md-3 search-bar">
+              <form action="">
+                <input  name="search_keyword" class="form-control" id="exampleInputPassword1" placeholder="Search" value="">
+              </form>
+              
+            </div>
+            <div class="col-md-3 sorting-bar">
+              <form action="">
+                <select  name="sortby" class="form-control" id="exampleInputPassword1">
+                  <option value="">Select Status</option>
+                  <option value="0">Pending</option>
+                  <option value="1">Installed</option>
+                </select>
+              </form>
+              
+            </div>
+          </div>
+          
+          <!-- /.card-header -->
+          <div class="card-body">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Customer Name</th>
+                  <th>Contact Person</th>
+                  <th>Mobile Phone Number</th>
+                  <th>Email Address</th>
+                  <th>No. of sites</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Steven Chen</td>
+                  <td>N/A</td>
+                  <td>+1 123 456 7890</td>
+                  <td>steven.chen@yahoo.com</td>
+                  <td>150</td>
+                  <td>
+                    <p class="text-success"><i class="fas fa-circle"></i> Installed</p>
+                  </td>
+                  <td>
+                    <a class="anchorLess">
+                      <a title="Click to Change Password" class="anchorLess" href="javascript:void(0);" ><i class="fas fa-eye success" aria-hidden="true" ></i></a>
+                      <a title="Click to Delete" class="anchorLess delete-confirm text-danger" (click)="openDeleteModal()" href="javascript:void(0);" ><i class="fas fa-trash danger" aria-hidden="true" ></i></a>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mark Luther</td>
+                  <td>N/A</td>
+                  <td>+1 123 456 7890</td>
+                  <td>mark.luther@gmail.com</td>
+                  <td>120</td>
+                  <td>
+                    <p class="text-danger"><i class="fas fa-circle"></i> Pending</p>
+                  </td>
+                  <td>
+                    <a class="anchorLess">
+                      <a title="Click to Change Password" class="anchorLess" href="javascript:void(0);" ><i class="fas fa-eye success" aria-hidden="true" ></i></a>
+                      <a title="Click to Delete" class="anchorLess delete-confirm text-danger" (click)="openDeleteModal()" href="javascript:void(0);" ><i class="fas fa-trash danger" aria-hidden="true" ></i></a>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Veronica Balbanova</td>
+                  <td>N/A</td>
+                  <td>+1 123 456 7890</td>
+                  <td>veronica.balbanova@ck.com</td>
+                  <td>75</td>
+                  <td>
+                    <p class="text-success"><i class="fas fa-circle"></i> Installed</p>
+                  </td>
+                  <td>
+                    <a class="anchorLess">
+                      <a title="Click to Change Password" class="anchorLess" href="javascript:void(0);" ><i class="fas fa-eye success" aria-hidden="true" ></i></a>
+                      <a title="Click to Delete" class="anchorLess delete-confirm text-danger" (click)="openDeleteModal()" href="javascript:void(0);" ><i class="fas fa-trash danger" aria-hidden="true" ></i></a>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Jay Anchante</td>
+                  <td>N/A</td>
+                  <td>+1 123 456 7890</td>
+                  <td>jay.anchante@gmail.com</td>
+                  <td>253</td>
+                  <td>
+                    <p class="text-danger"><i class="fas fa-circle"></i> Pending</p>
+                  </td>
+                  <td>
+                    <a class="anchorLess">
+                      <a title="Click to Change Password" class="anchorLess" href="javascript:void(0);" ><i class="fas fa-eye success" aria-hidden="true" ></i></a>
+                      <a title="Click to Delete" class="anchorLess delete-confirm text-danger" (click)="openDeleteModal()" href="javascript:void(0);" ><i class="fas fa-trash danger" aria-hidden="true" ></i></a>
+                    </a>
+                  </td>
+                </tr>
+                <!-- <tr>
+                  <td colspan="7" class="text-center text-dabger">No company to display.</td>
+                </tr> -->
+              </tbody>
+            </table>
+            <!-- <div class="clearfix mt-20">
+            </div> -->
+          </div>
+          <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+      </div>
+      <!-- /.col -->
+    </div>
+  <!-- /.row -->
+  </div><!-- /.container-fluid -->
+</section>
+<!-- /.content-wrapper -->

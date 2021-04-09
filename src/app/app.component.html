@@ -1,0 +1,25 @@
+<div class="wrapper">
+  
+  <!-- Navbar -->
+  <app-navbar></app-navbar>
+  <!-- /.navbar -->
+  
+  <!-- Main Sidebar Container -->
+  <app-sidebar></app-sidebar>
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div [@sideBarOpenClose]="showSideBar ? 'onOpen' : 'onClose'" class="content-wrapper">
+  
+    <router-outlet></router-outlet>
+  <!-- /.content -->          
+  </div>
+
+  <footer [@sideBarOpenClose]="showSideBar ? 'onOpen' : 'onClose'" class="main-footer">
+    <strong>Copyright &copy; 2014-2021 <a href="http://localhost:8000">Customer Web</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.0.5
+    </div>
+  </footer>
+</div>
+<!-- ./wrapper -->
