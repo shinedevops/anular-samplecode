@@ -1,0 +1,55 @@
+<div class="sub-admin-breadcrumbs">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a class="cursor" (click)="goBack()"><img src="assets/images/Arrow-icon.svg" alt="" >Back</a>
+                <a>Role</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                <a>Role Permissions</a>
+            </li>
+        </ol>
+    </nav>
+</div>
+
+<div class="db-agent-sub-admin-profile">
+    <div class="coordinator-sub-admin-box">
+        <div class="user-feed-profile table-profile">
+            <!-- <div class="user-feed-profile-img">
+                <img src="assets/images/dd-profile.png" class="user-profile" alt="feed-profile">
+            </div> -->
+            <div class="user-profile-heading">
+                <h3>{{roleDeatil?.role?.displayValue}}</h3>
+            </div>
+
+        </div>
+        <div class="permissions-outer" [formGroup]="form">
+            <div class="group" *ngFor="let role of roleData" [formArrayName]="role._id">
+                <div class="header">
+                    {{ role._id }}
+                </div>
+                <div class="permissions">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3" *ngFor="let c of role.permissions; let f = index">
+                            <div class="permission-outer">
+                                <div class="login-checkbox-form-group">
+                                    <label [for]="c.name"><input type="checkbox" [formControlName]="f"  [id]="c.name">{{ c.displayValue
+                                        | titlecase}}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 tex">
+
+                <button type="button" class="button grey-btn mr" routerLink="../../">Cancel</button>
+                <button type="button" class="button primary-btn" (click)="updatePermissions()">Update
+                    Permissions</button>
+            </div>
+        </div>
+    </div>
+</div>
